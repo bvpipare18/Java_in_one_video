@@ -24,7 +24,7 @@
     double      double      64          8           4.9e-324    1.8e+368
     boolean     boolean     NA          NA          false       true
 
-8. For E.g.
+8.  For E.g.
     int i = 5:
     int --> DataType
     i --> Variable
@@ -32,3 +32,37 @@
 
     VALID --> int i = 5, float f =5, double = 5
     INVALID --> int i = 5.5
+
+9.  Java is strict OOP it means Every variable must be declare by some DataType.
+
+10. Working with Java Fundamentals
+    - Java Variables
+
+11. You can name variable as you like.
+    No special Charachters other than '$ _'.
+    VALID --> abc, $abc, _abc, ab4c, abc$d
+    INVALID --> 3abc
+        
+12. Once you define the variable Value you can change.
+    int num = 500000000;
+        IS EQUALS To
+    int number = 50_00_00_000;
+
+13. double i = 5.5; 
+        is a VALID to use it as we must deine variable 
+    like this👇👇
+    float i = 5.5f;
+
+14. To assign small values like 5 we must use 'short' DataType instead of 'int'.
+
+15. To use only single value we can also use
+    byte b = 5;
+
+16. To use value bigger than 10 digits we must use 'long' and while dealing with 
+    these we must also specify 'l' at the end of the number.
+        long big_value = 5l;
+
+17. Implicit conversion --> double d1 = 5;
+    Typecasting --> int k = (int) 5.6;
+
+18. byte -->
