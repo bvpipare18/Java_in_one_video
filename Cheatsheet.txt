@@ -4,3 +4,9 @@
 
 3.  void - returns nothing
     print() - method
+
+4.  Source File ---> Compiler ---> Byte Code
+
+5.  To Run Byte Code we need Platform that is JVM(Java Virtual Machine).
+
+6.  Java is Platform Indpendent.
