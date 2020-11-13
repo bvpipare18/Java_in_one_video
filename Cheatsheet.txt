@@ -1,0 +1,6 @@
+1.  Everything in Java must be written inside class, i.e. it's a strict OOP.
+
+2.  In Java, Execution starts from main() method.
+
+3.  void - returns nothing
+    print() - method
