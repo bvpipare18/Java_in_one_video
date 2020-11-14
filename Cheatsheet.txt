@@ -142,4 +142,20 @@
     -   do while --> Executes at leat Once.
     -   for --> If you know the starting & endpoint.
     -   for-each also called enhanced for loop --> Made for arrays & collection.
-        
+
+25. Loops Assignment
+    -   1
+        1 2
+        1 2 3
+        1 2 3 4
+        1 2 3 4 5
+        1 2 3 4 5 6
+
+    -   A
+        A B
+        A B C
+
+    -   * * * *
+        *     *
+        *     *
+        * * * *
