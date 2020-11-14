@@ -106,3 +106,16 @@
 21. If-Else Selection Statements
     -   When you have more than 1 statement after 'if' then you must specify
         inside a 'curly braces{}'.
+
+22. Ternary & Switch Operator
+    -   ternary Operator
+        ?: --> condition?exp1:exp2
+        
+        if condition is true execute exp1 otherwise exp2
+            OR/Equals to
+        if (condition) {
+            exp1
+        } else {
+            exp2
+        }
+        
