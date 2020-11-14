@@ -65,4 +65,36 @@
 17. Implicit conversion --> double d1 = 5;
     Typecasting --> int k = (int) 5.6;
 
-18. byte -->
+18. Image added.
+
+19. Naming Convention in Java.
+
+    -   Variable Name - sname,stockprice
+    -   Class Name - String, Integer, Student, Worker, Engineer
+    -   Interface Name - Runable, Serializable
+
+    -   Interface --> Adjective
+            e.g. Runable, Readable, Remote
+            - 'able' can be at end of the year.
+
+    -   Class --> Noun
+            e.g. Student, Person, Computer, HashMap
+    
+    👆👆 for both Interface & Class Names we should always prefer first letter
+        as Capital.
+
+    -   Method --> Verb
+            e.g. actiomPerformed, run, print, write
+
+    -   Variable
+            e.g. stockprice, bankdetails
+
+    -   Constant
+            e.g. PI, DENSITY, MAX_PRICE
+
+    -   CAMEL CASING RULE
+            e.g. MyFirstJavaClass, CheatSheet
+
+    Variable    Constant   Constructor      Method     Interface
+    
+    abc         ABC         Abc()           abc()      Stretchable        
