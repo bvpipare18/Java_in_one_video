@@ -131,7 +131,15 @@
 
             case n:
                 break;
-            default:
-            
+            default:            
         }
+
+24. While & For iteration Statements
+    -   Most of the loops will have 3 points we must remember
+        Initialzation,Condition,Incremeny/Decrement
+
+    -   while --> Executing for particular time & then stopping.
+    -   do while --> Executes at leat Once.
+    -   for --> If you know the starting & endpoint.
+    -   for-each also called enhanced for loop --> Made for arrays & collection.
         
