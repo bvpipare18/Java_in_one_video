@@ -118,4 +118,20 @@
         } else {
             exp2
         }
+
+23. Fundamentals of Java
+    Selection Statement: Switch Statement
+    -   You can use DataType 'int,String & char' in switch case.
+        Syntax:
+        switch(variable_name){
+            case 1:
+                break;
+            case 2:
+                break;
+
+            case n:
+                break;
+            default:
+            
+        }
         
