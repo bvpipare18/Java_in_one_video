@@ -103,3 +103,6 @@
 
         Arithmetic --> +,-,*,/,%
         
+21. If-Else Selection Statements
+    -   When you have more than 1 statement after 'if' then you must specify
+        inside a 'curly braces{}'.
