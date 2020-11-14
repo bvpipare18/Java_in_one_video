@@ -96,5 +96,10 @@
             e.g. MyFirstJavaClass, CheatSheet
 
     Variable    Constant   Constructor      Method     Interface
-    
-    abc         ABC         Abc()           abc()      Stretchable        
+
+    abc         ABC         Abc()           abc()      Stretchable
+
+20. Arithmetic Operators in Java
+
+        Arithmetic --> +,-,*,/,%
+        
