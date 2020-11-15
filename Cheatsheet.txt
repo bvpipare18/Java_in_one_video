@@ -166,4 +166,39 @@
 
     -   break --> It will break at that points & will come out of that loop.
 
-27.   
+27. Class & Objects
+    -   Java follows OOPS concept viz is Classes & Objects.
+    -   For e.g. To Construct a building we must have blueprint of building.
+    -   Building is an 'Object' to build any object JVM needs a Structure/Blueprint 
+        that blueprint is a 'Class'.
+    
+    -   What is Class?
+        Class defines the structure of an object and working of an object.
+
+        Class Structure
+                    class Building{
+                        int floors;
+                        public static provideAcc(){
+
+                        }
+                    }
+
+        Object -
+            Phone --> 
+                    Knows Something - Variable - structure of phone --> color,logo
+                    Does Something - Method - behavior of object
+
+    -   To create a object of class 
+            We use 'new' Keyword to create object & it is responsible for 
+            allocating memory.
+                for e.g. 
+                    Calculator obj = new Calculator();
+                    /*
+                    Calculator - DataType
+                    obj - Reference variable
+                    new Calculator() - Object
+                    Calculator() - Constructor
+                    */
+
+    -   Whenever if you want to use variable or method of other class in main 
+        method we must always use object reference to access it.
