@@ -282,3 +282,21 @@
 29. Constructor Example
     -   If we don't have constructor in class then while creating object of class
         it will allocate some memory.
+
+30. this keyword
+    -   When do we use 'this' keyword???
+            Whenever the instance variable & local variable is same.
+
+    -   Local varibale always shadows/dominates instance variable.
+    -   To solve this problem we must use 'this' keyword.
+        instance    Local
+        this.num1 = num1;
+        this.num2 = num2;
+
+            OR/Equals
+            
+    -   Use different name for local varibles & instance variable.
+        instance    Local
+          num1   =   number1;
+          num2   =   number2;
+        
