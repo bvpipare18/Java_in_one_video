@@ -294,9 +294,15 @@
         this.num2 = num2;
 
             OR/Equals
-            
+
     -   Use different name for local varibles & instance variable.
         instance    Local
           num1   =   number1;
           num2   =   number2;
         
+31. Method & Constructor Overloading
+    NOTE -->
+    -   We can use Multiple methods with name but, different parameters.  
+
+    -   What is Method Overloading??
+        Same Method name & different parameters.
