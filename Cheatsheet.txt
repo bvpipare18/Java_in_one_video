@@ -202,3 +202,78 @@
 
     -   Whenever if you want to use variable or method of other class in main 
         method we must always use object reference to access it.
+
+28. Constructor in Java
+    class A{
+        int i;// 4 bytes, Default value = 0
+        float f; // 4 bytes, default value = 0.0
+
+        public A(){ // Constructor
+
+        }
+    }
+    public static void main(String[] args) {
+        A obj = new A(); //Object creation
+    }
+
+    -   When do we use Constructor???
+            Whenever we want to create object of a class.
+
+    -   Execution of code always starts from main() method.
+        public static void main(String[] args) {
+        
+        }
+        main(String[] args) - It takes string array as a parameter.
+        void - it will return nothing
+
+        To call any method in java we require object.
+
+        Que - What is Deadlock????
+        Ans - You can not call main() without object and You can not create 
+        object without main().
+        Solution - Specify main method as a 'static'.
+
+        make it as 'public'
+
+    -   Object will take some space in HEAP Memory.
+
+    28.1 Information on Constructor
+
+    -   Constructor is Member method.
+    -   Constructor will have same name as class name.
+    -   Every class will have constructor,Even if you don't mention.
+    -   Constructor will Never Return Anything that the reason we don't
+        mentioned Anything in a return type and we'll mention 'public'
+        Access Modifier.
+    -   Constructor will be used to allocate memory for Object.
+    -   As soon as you create a object it will call constructor automatically.
+    -   Default constructor
+            public ClassName(){
+
+            }
+
+    -   What is Constructor Overloading???
+            Class having Multiple constructors with different parameters.
+
+    -   Multiple Constructors
+        class A{
+            int i;
+            float f; 
+
+            public A(){ // Default Constructor
+
+            }
+            public A(int k){ //Constructor with 1 parameter
+
+            }
+            public A(int k,float j){ //Constructor with 2 parameter
+
+            }
+        }
+
+    -   Object Creation
+        public static void main(String[] args) {
+            A obj = new A();
+            A obj = new A(6);
+            A obj = new A(6,3.5f);
+        }
