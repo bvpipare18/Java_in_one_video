@@ -159,3 +159,11 @@
         *     *
         *     *
         * * * *
+
+26. Break & continue
+    -   continue --> It will skip the current iteration and it will execute other
+                    iterations of loop.
+
+    -   break --> It will break at that points & will come out of that loop.
+
+27.   
