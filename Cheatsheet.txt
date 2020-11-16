@@ -306,3 +306,9 @@
 
     -   What is Method Overloading??
         Same Method name & different parameters.
+
+    -   What is Constructor Overloading???
+        Class having Multiple constructors with different parameters.
+
+        The way we create a object & parameters we pass will decide which constructor
+        to be called is constructor Overloading.
