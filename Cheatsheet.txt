@@ -369,5 +369,17 @@
 
     -   You can use static variable inside a static block.
 
+33. Inner Class
 
-    
+    -   Inside a class we can have variables & methods.But to use those non static methods
+        we must create object of that class.
+
+    -   We can create a class inside a class.
+
+    -   In order to access inner class we need outer class & the same case with
+        objects to create object inner class we must use object of outer class.
+
+    -   Syntax for accesing nested class
+            outer_class_name.inner_class_name new_object_name = object_of_outer_class.new inner_class_name();
+            For e.g.
+               Outer.Inner obj1 = obj.new Inner();
