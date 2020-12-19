@@ -494,3 +494,38 @@
                 System.out.println(obj.add(4, 5, 6, 7, 8, 9, 10, 11, 12));
             }
         }
+
+37. OOPS CONCEPT
+        1.  Inheritance
+        2.  Abstraction
+        3.  Data Hiding
+        4.  Encapsulation
+
+        1.  Inheritance --> You manufactured Calculator & added feature of addition but after 
+                some months user wants that Calculator to perform  subtraction as well then
+                you must extend those existing properties while adding feature of
+                subtraction by using keyword "extends".You must create object Sub class in main
+                method to have to have result of "Addition" & "subtraction". 
+
+            -   In C/C++
+                    Base class --> Derrived class
+            -   In Java 
+                    Super class --> Sub class
+            -   In OOP
+                    Parent --> Child
+
+            -   Single level inheritance 
+
+                class Calculator {
+                    public int add(int i, int j) {
+                        return i + j;
+                    }
+                }
+
+                class CalcAdv extends Calculator {
+                    public int sub(int i, int j) {
+                        return i - j;
+                    }
+                }                
+
+        
