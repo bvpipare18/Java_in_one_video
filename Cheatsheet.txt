@@ -312,3 +312,62 @@
 
         The way we create a object & parameters we pass will decide which constructor
         to be called is constructor Overloading.
+
+32. static Keyword
+
+    -   Bcoz when we create a object it takes space in HEAP Memory.
+
+    -   Therefore we need to load class before creating object.
+   
+    -   Whenever we load the class so there is special memory in JVM that
+        memory which stores class files is called Class Loader Memory.
+   
+    -   Two employees working in same company and they both have Same CEO 
+        named "Bill" and after some months CEO changes then that changes must 
+        apply for all the employees. in this case... - two employees  
+
+    -   If you want some variables do not be object specific then you must
+        use 'static' keyword for that variable.
+
+    -   If, Some variables are same in both objects then we can also use
+        className to access that variable.
+
+        obj.ceo = "Bill"; --> class_name.ceo = "Bill";
+
+    -   To access non static variable we must use object_name.
+
+    -   To acces static variable we can use object as well as Class Name.
+
+    -   To access static variable we dont need object instead we can use Class_name.
+
+    -   public static void main(String[] args)
+        To access main() method we dont need a objet bcoz it has been mentioned 
+        as static.
+
+    -   T
+        static{
+
+        }
+        It doesn't matter how many object you create the above block
+        Will execute only once.
+
+    -   If you want to initialize static variable you need 👆👆above 
+        Static block.
+
+    -   If you want to initialize non static variable you need a Constructor.
+
+    -   It doesn't matter how many object you create class will load once.
+        No.of times you can create a object.
+
+    -   Static block will execute first then constructor will execute.
+        Sequence doesn't matter.
+
+    -   IMPORTANT & SPOILER ALERT
+        -   Static variables are same for all the objects
+        -   Non static variables are different for all the objects
+        -   Can not use non-static variable in static block
+
+    -   You can use static variable inside a static block.
+
+
+    
