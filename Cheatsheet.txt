@@ -472,3 +472,25 @@
                 System.out.println();
             }
 
+36. Varags --> Variable arguments / Variable length arguments
+        Let us supose you dont want your number of arguments to be specific and your variably 
+        passing n arguments and that n could be of any number.
+        We can pass any number of arguments once you use this Concept Varags.
+
+        class Calculator {
+            public int add(int... n) { // 4,5,6,7,8,9 - it will come as a array
+                int sum = 0;
+                for (int i : n) {
+                    sum += i;
+                }
+                return sum;
+            }
+        }
+
+        public class VaragsDemo {
+            public static void main(String[] args) {
+                Calculator obj = new Calculator();
+                System.out.println(obj.add(4, 5, 6, 7, 8, 9));
+                System.out.println(obj.add(4, 5, 6, 7, 8, 9, 10, 11, 12));
+            }
+        }
