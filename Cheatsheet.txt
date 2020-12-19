@@ -526,6 +526,28 @@
                     public int sub(int i, int j) {
                         return i - j;
                     }
-                }                
+                }
+
+            -   Multilevel Inheritance
+
+                class Calculator {
+                    public int add(int i, int j) {
+                        return i + j;
+                    }
+                }
+
+                class CalcAdv extends Calculator {
+                    public int sub(int i, int j) {
+                        return i - j;
+                    }
+                }
+
+                class CalcVeryAdv extends CalcAdv {
+                    public int multi(int i, int j) {
+                        return i * j;
+                    }
+                }
+
+            -   But if you consider two of them then it will be considered as Singlelevel Inheritance.               
 
         
