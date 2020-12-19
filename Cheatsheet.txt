@@ -435,4 +435,15 @@
                 In JVM inside heap memory 4 blocks will be assign and initially by default
                 values for all the boxes will be ZERO.
 
-    -   
+    -   2D Array
+            int a[] = {1,2,3,4};
+            int b[] = {2,4,6,8};
+            int c[] = {5,6,7,8};
+
+            Instead we can use single array 
+
+            int d[][] = {
+                        {1,2,3,4},
+                        {2,4,6,8},
+                        {5,6,7,8}
+            };
