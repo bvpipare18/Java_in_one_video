@@ -1,14 +1,14 @@
 
 class Outer {
-    int a; // member variable
+    static int a; // static variable
 
-    // member method
-    public void show() {
-        System.out.println("in show");
+    // static method
+    public static void show() {
+
     }
 
-    // memeber class
-    class Inner {
+    // static class
+    static class Inner {
         public void display() {
             System.out.println("in display");
         }
@@ -28,15 +28,8 @@ public class InnerDemo {
         Outer obj = new Outer();
         obj.show();
 
-        // INVALID IN CASE OF ABOVE CONDITION
-        // inner_class_name obj_of_inner_class = new inner_class_name();
-
-        // In order to call the method present inside a nested class,
-        // we use below syntax
-        // RIGHT
-        // outer_class_name.inner_class_name new_object_name = object_of_outer_class.new
-        // inner_class_name();
-        Outer.Inner obj1 = obj.new Inner();
+        // To access static class
+        Outer.Inner obj1 = new Outer.Inner();
         obj1.display();
     }
 

@@ -383,3 +383,12 @@
             outer_class_name.inner_class_name new_object_name = object_of_outer_class.new inner_class_name();
             For e.g.
                Outer.Inner obj1 = obj.new Inner();
+
+    -   In order to access static class we dont use object of outer class instead we use Outer class.
+            For e.g.    
+                Outer.Inner obj1 = new Outer.Inner();
+
+    -   Inner Class
+            1.  Member Class - (without 'static' keyword) explained in previous commit.
+            2.  Static Class - explained in these commit.
+            3.  Anonymous Class - We will see after interfaces, abstract 
