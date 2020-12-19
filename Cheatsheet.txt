@@ -392,3 +392,47 @@
             1.  Member Class - (without 'static' keyword) explained in previous commit.
             2.  Static Class - explained in these commit.
             3.  Anonymous Class - We will see after interfaces, abstract 
+
+34. Array Theory
+    
+    -   Array - Collection of elements having simiar data type
+            For e.g. 4 Cups filled by Tea placed on Tray.
+                4 Cups - elements
+                Tea - Similar data type
+                Tray - Array
+
+    -   In java, index number starts with 0,1,2,3.... so on.
+
+    -   1 Dimensional(1D) Array - Array having 50 values
+
+    -   ArrayIndexOutOfBound -> If you go beyond your array limit.
+
+    -   2D Array - Arrays having rows and columns
+
+    -   Supose 20 guests visited Your house and you have to serve Tea to all of them but in your 
+        house there are 3 trays 
+        1st carrying 8 Cups 
+        2nd carrying 6 Cups
+        3rd carrying 6 Cups
+
+    -   Matrics
+                0   1   2   3   4   5   6   7
+                
+            0   1   1   1   1   1   1   1   1
+            1   1   1   1   1   1   1   0   0
+            2   1   1   1   1   1   1   0   0
+
+            tray[3][8]
+
+    -   Array 
+            a) 1D array
+            b) 2D array
+            c) Jagged array 
+
+    -   Syntax 
+            data_type name_of_array[] = new data_type[size_of_array];
+                E.g. int nums[] = new int[4];
+                In JVM inside heap memory 4 blocks will be assign and initially by default
+                values for all the boxes will be ZERO.
+
+    -   
