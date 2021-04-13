@@ -75,7 +75,7 @@
 
     -   Interface --> Adjective
             e.g. Runable, Readable, Remote
-            - 'able' can be at end of the year.
+            - 'able' can be added at the end of the words.
 
     -   Class --> Noun
             e.g. Student, Person, Computer, HashMap
@@ -102,7 +102,18 @@
 20. Arithmetic Operators in Java
 
         Arithmetic --> +,-,*,/,%
-        
+        int division = 6/4; //Answer --> 1
+        double division = (double) 6/4; //Answer --> 1.5
+
+        n++ --> n+=1 --> n = n+ 1 all are equal & they are called as Short Hand Operator
+
+        int m = 55; int n = 45;
+        m = ++n; // first  increments
+        System.out.println(m) --> 46
+
+        m = n++; //first assigns and then increments
+        System.out.println(m) --> 45
+
 21. If-Else Selection Statements
     -   When you have more than 1 statement after 'if' then you must specify
         inside a 'curly braces{}'.
@@ -118,6 +129,16 @@
         } else {
             exp2
         }
+
+        int i = 8; int j = 0;
+        int(i>6){
+            j = 1;
+        }else{
+            j =2;
+        }
+
+        Above 👆👆 code can be written as
+        j = i>6?1:2;
 
 23. Fundamentals of Java
     Selection Statement: Switch Statement
@@ -136,7 +157,7 @@
 
 24. While & For iteration Statements
     -   Most of the loops will have 3 points we must remember
-        Initialzation,Condition,Incremeny/Decrement
+        Initialization,Condition,Increment/Decrement
 
     -   while --> Executing for particular time & then stopping.
     -   do while --> Executes at leat Once.
@@ -263,7 +284,7 @@
             public A(){ // Default Constructor
 
             }
-            public A(int k){ //Constructor with 1 parameter
+            public A(int k){ //Constructor with 1 parameter --> Paramaterized Constructor
 
             }
             public A(int k,float j){ //Constructor with 2 parameter
@@ -302,7 +323,7 @@
         
 31. Method & Constructor Overloading
     NOTE -->
-    -   We can use Multiple methods with name but, different parameters.  
+    -   We can use Multiple methods with same name but, different parameters.  
 
     -   What is Method Overloading??
         Same Method name & different parameters.
@@ -377,7 +398,7 @@
     -   We can create a class inside a class.
 
     -   In order to access inner class we need outer class & the same case with
-        objects to create object inner class we must use object of outer class.
+        objects to create object of inner class we must use object of outer class.
 
     -   Syntax for accesing nested class
             outer_class_name.inner_class_name new_object_name = object_of_outer_class.new inner_class_name();
@@ -409,7 +430,7 @@
 
     -   2D Array - Arrays having rows and columns
 
-    -   Supose 20 guests visited Your house and you have to serve Tea to all of them but in your 
+    -   Suppose 20 guests visited Your house and you have to serve Tea to all of them but in your 
         house there are 3 trays 
         1st carrying 8 Cups 
         2nd carrying 6 Cups
@@ -550,4 +571,4 @@
 
             -   But if you consider two of them then it will be considered as Singlelevel Inheritance.               
 
-        
+38. ASCII --> American Standard Code for Information Interchange
