@@ -5,7 +5,7 @@ class Emp {
     static String ceo;
 
     static { // Execute ---> when you load a class file
-        ceo = "Larry";
+        ceo = "Sundar";
     }
 
     public Emp() { // Execute ---> When you create an object

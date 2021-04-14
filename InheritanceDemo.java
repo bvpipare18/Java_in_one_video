@@ -1,10 +1,16 @@
-class Calculator {
+/**
+ * 
+ * 1. Calculator & CalcAdv, CalcAdv & CalcVeryAdv --> Single Level Inheritance
+ * 2. Calculator & CalcAdv & CalcVeryAdv --> Multi Level Inheritance
+ */
+
+class Calculator { // Super,Parent,Base
     public int add(int i, int j) {
         return i + j;
     }
 }
 
-class CalcAdv extends Calculator {
+class CalcAdv extends Calculator { // Sub, Child, Derrived
     public int sub(int i, int j) {
         return i - j;
     }
@@ -18,6 +24,8 @@ class CalcVeryAdv extends CalcAdv {
 
 public class InheritanceDemo {
     public static void main(String[] args) {
+        // Calculator calc = new Calculator();
+        // CalcAdv calc = new CalcAdv();
         CalcVeryAdv calc = new CalcVeryAdv();
         int result1 = calc.add(4, 5);
         int result2 = calc.sub(6, 3);

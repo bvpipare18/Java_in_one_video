@@ -477,7 +477,7 @@
             };
 
 35. Enhanced For loop
-        can be used for 1D as swll as 2D array
+        can be used for 1D as well as 2D array
         1D - 
             int a[] = { 1, 2, 3, 4, 5, 6 };
             for (int i : a) {
@@ -569,6 +569,32 @@
                     }
                 }
 
+            -   1. Calculator & CalcAdv, CalcAdv & CalcVeryAdv --> Single Level Inheritance
+                2. Calculator & CalcAdv & CalcVeryAdv --> Multi Level Inheritance
+                3. Java Does not support Multiple Inheritance.
+
+            -   Inheritance has a two types of relationship 
+                1. IS-A --> One class extending another class.
+                    E.g. Dog IS-A Animal
+
+                2. HAS-A --> In a class creating a object of another class.
+                    E.g. Bathroom HAS-A Tub.
+
             -   But if you consider two of them then it will be considered as Singlelevel Inheritance.               
 
+    37.1    Super Method
+            1.  When we create a object of Sub/Child class it also calls the 
+                constructor of Super&Sub class as well.
+
+            2.  When we create a object of Sub/Child class by passing parameters it calls 
+                the Paramaterized Constructor of Sub class and Default Constructor of Super class.
+
+            3.  To solve above 👆👆 2nd problem we must specify super() method by passing
+                parameter in Sub Class.
+
+            4.  Every constructor has super() method.
+
+            5.  If you want to call Paramaterized constructor of super class and Default constructor
+                of sub class. Then you must specify super(5) in default constructor of sub class.
+                
 38. ASCII --> American Standard Code for Information Interchange

@@ -47,6 +47,7 @@ public class VaragsDemo {
     public static void main(String[] args) {
         Calculator obj = new Calculator();
         System.out.println(obj.add(4, 5, 6, 7, 8, 9));
+        System.out.println(obj.add(4, 5, 6, 7, 8, 5949));
         System.out.println(obj.add(4, 5, 6, 7, 8, 9, 10, 11, 12));
     }
 }
