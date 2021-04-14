@@ -596,5 +596,71 @@
 
             5.  If you want to call Paramaterized constructor of super class and Default constructor
                 of sub class. Then you must specify super(5) in default constructor of sub class.
-                
+
+    37.2    Multiple Inheritance
+            Case 1:
+                class C{
+                    
+                }
+                main(){
+                    C obj = new C();
+                    obj.show();
+                }
+
+            -   Bcoz show() method is not present class C it will give compile time error.
+
+            Case 2:
+                class A{
+
+                }
+                class C extends A{
+                    
+                }
+                main(){
+                    C obj = new C();
+                    obj.show();
+                }
+
+            -   Bcoz show() method is not present in both the classes it will give compile time error.
+
+            Case 3:
+                class A{
+                    show();
+                }
+                class B{
+                    show();
+                }
+                class C extends A,B{
+                    
+                }
+                main(){
+                    C obj = new C();
+                    obj.show();
+                }
+
+            -   Bcoz show() method is present in both the classes it will have confusion to show()
+                method to call for these type of problems is called Ambiguity problems.
+
+            Case 4:
+                class A{
+                    
+                }
+                class B{
+                    show();
+                }
+                class C extends A,B{
+                    
+                }
+                main(){
+                    C obj = new C();
+                    obj.show();
+                }
+
+            -   It will call show() method present in B class
+
+        -   To solve these type above 👆 problems java removes Multiple inheritance & java does not 
+            support Multiple inheritance directly.
+
+        -   Using classes you can not achieve Multiple Inheritance.
+        
 38. ASCII --> American Standard Code for Information Interchange
