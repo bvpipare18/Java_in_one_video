@@ -1,4 +1,5 @@
-// Case 1 --> Output - in
+//Case 1
+
 // class A {
 //     public void show() {
 //         System.out.println("in A");
@@ -6,23 +7,19 @@
 // }
 
 // class B extends A {
-
-// }
-
-//Case 2 --> Output - in A
-// class A {
 //     public void show() {
-//         System.out.println("in A");
-//     }
-// }
-
-// class B extends A {
-//     public void show1() {
 //         System.out.println("in B");
 //     }
 // }
 
-// Case 3 --> OutPut - in B -----> METHOD OVERRIDING
+// class C extends A {
+//     public void show() {
+//         System.out.println("in C");
+//     }
+// }
+
+//Case 2
+
 class A {
     public void show() {
         System.out.println("in A");
@@ -30,20 +27,30 @@ class A {
 }
 
 class B extends A {
-    @Override
     public void show() {
         System.out.println("in B");
+    }
+
+    public void second_method() {
+        System.out.println("in Second Method");
+    }
+}
+
+class C extends A {
+    public void show() {
+        System.out.println("in C");
     }
 }
 
 public class OverridingDemo {
     public static void main(String[] args) {
         // Case 1
-        // B obj = new B();
-        // obj.show();
+        A obj1 = new B();
+        obj1.show();
 
         // Case 2
-        B obj1 = new B();
-        obj1.show();
+        // A obj = new B();
+        // obj.second_method();
+        /** You can not do above scenario */
     }
 }

@@ -703,4 +703,6 @@
         e.g. A obj = new B();
         A - reference, new B() - object
     Ans - If you have a reference of super class & object of sub class
-        you can call only those method which are there in Super class.
+        you can call only those method which are there in Super class 
+        & as well as in Sub class.
+
