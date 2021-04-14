@@ -45,9 +45,12 @@ class C extends A {
 public class OverridingDemo {
     public static void main(String[] args) {
         // Case 1
-        A obj1 = new B();
+        /** These will be linked at runtime polymorphism */
+        A obj1 = new B();// runtime polymorphism OUTPUT - in B
         obj1.show();
 
+        obj1 = new C();
+        obj1.show();// Dynamic Method Dispatch
         // Case 2
         // A obj = new B();
         // obj.second_method();
