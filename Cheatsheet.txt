@@ -662,5 +662,38 @@
             support Multiple inheritance directly.
 
         -   Using classes you can not achieve Multiple Inheritance.
-        
+
 38. ASCII --> American Standard Code for Information Interchange
+
+39. Method Overriding
+    -   Child class method will override the method of Parent class.
+
+    Case 1:
+        class A{
+            public static show(){
+                System.out.println("in A");
+            }
+        }
+        class B extends A{
+
+        }
+
+        B obj = new B();
+        obj.show();
+
+    OUTPUT - in A
+
+    Case 2: Method Overriding
+        class A{
+            public static show(){
+                System.out.println("in A");
+            }
+        }
+        class B extends A{
+            @Override
+            public static show(){
+                System.out.println("in B");
+            }
+        }
+
+    OUTPUT - in B
