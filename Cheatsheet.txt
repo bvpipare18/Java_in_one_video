@@ -697,3 +697,10 @@
         }
 
     OUTPUT - in B
+
+40. Dynamic Method Dispatch
+    -   How to create reference of super class and object of sub class?
+        e.g. A obj = new B();
+        A - reference, new B() - object
+    Ans - If you have a reference of super class & object of sub class
+        you can call only those method which are there in Super class.
