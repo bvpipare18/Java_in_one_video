@@ -733,4 +733,27 @@
     -   Why we need Encapsulation?
         To keep our data safe
 
+42. Wrapper Class | Autoboxing
+    -   Whenever we assign some data to certain variables using primitive data_type 
+        so as Java is strict OOP Language so we will create object of Everything.
 
+        Primitive data_type                             Wrapper Class
+    1.  char                                            Character
+    2.  byte                                            Byte
+    3.  short                                           Short
+    4.  int                                             Integer
+    5.  long                                            Long
+    6.  float                                           Float
+    7.  double                                          Double
+    8.  boolean                                         Boolean
+
+    -   Whenever you put primitive value in object is called Boxing/Wrapping.
+        int i = 5; // Primitive Datatype
+        Integer ii = new Integer(i);// Boxing - Wrapping
+
+        int j = ii.intValue(); // Unboxing - Unwrapping
+
+        Integer value = i;// Autoboxing
+        int k = value; // Autounboxing
+
+    -   To access static method we can use Class_Name
