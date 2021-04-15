@@ -757,3 +757,107 @@
         int k = value; // Autounboxing
 
     -   To access static method we can use Class_Name
+
+43. Abstract Keyword
+    -   We can use abstract in a Class as well as in method.
+
+    -   So if you dont want anyone to create object of any specific class then we 
+        specify that Class as 'ABSTRACT'.
+        e.g. abstract class Human{
+
+        }
+
+    -   Once you specify class as abstract no one can create object of that class.
+
+    -   To declare any method we use abstract keyword.
+        E.g. 
+        -   Declaration --> public abstract void eat();
+        -   Defining --> 
+                    public void eat(){
+
+                    }
+
+    -   Whenever you have abstract method inside a class that class must be declared
+        as abstract.
+
+    -   VALID CASES
+    -   Case 1
+            class Human {
+                public void eat() {
+
+                }
+
+                public void walk() {
+
+                }
+            }
+
+            Human object = new Human();
+
+    -   Case 2
+            abtract class Human {
+                public void eat() {
+
+                }
+
+                public void walk() {
+
+                }
+            }
+        We can't create a object of these class
+
+    -   Case 3
+            abtract class Human {
+                //Declaration
+                public abtract void eat();
+
+                //Definition
+                public void walk() {
+
+                }
+            }
+        We can't create a object of these class
+
+    -   It is not compulsory to always have a abstract method inside a abstract class.
+
+    -   INVALID CASE
+        Case 4
+            class Human {
+                //Declaration
+                public abtract void eat();
+
+                //Definition
+                public void walk() {
+
+                }
+            }
+
+    -   If we are using abstract method in a class (written above) then we must
+        also specify that class as abstract class.
+
+
+    -   If you are extending abstract class which contains abstract method in it then 
+        we must define the method inside newly created class(viz. Sub class) 
+        otherwise it will also become abstract Class.
+
+        abstract class Human {
+
+            public abstract void eat();
+
+            public void walk() {
+
+            }
+        }
+
+        //Below class is also known as Concrete class
+        class Man extends Human { //Concrete class
+            public void eat() {
+
+            }
+        }
+
+        // VALID
+        Human object = new Man();
+        Man object1 = new Man();
+
+         
