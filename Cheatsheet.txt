@@ -706,3 +706,31 @@
         you can call only those method which are there in Super class 
         & as well as in Sub class.
 
+    -   To achieve Dynamic Method Dispatch we use runtime polymorphism.
+
+41. Encapsulation
+    -   What is Encapsulation>
+        Binding data with methods
+
+    -   You will be having class inside it will have object which
+        - Knows Something --> variables
+        - Does Something --> methods
+
+    -   Whenever you create a Variables inside class make sure that those Variables
+        only be changed with the help of Method.
+
+    -   We access through the main method instead we should use Setters and Getters.
+
+    -   Setters --> used to set the value(setting the value)
+    -   Getters. --> used to get the value(fetching)
+
+    -   Make sure variables you will use must be private.
+    -   Methods who will access those variables should be public.
+
+    -   As you can conclude from above👆👆 two Statements is that you are restricting
+        or binding variables data to specific methods is called Encapsulation.
+
+    -   Why we need Encapsulation?
+        To keep our data safe
+
+
