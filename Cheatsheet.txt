@@ -840,7 +840,7 @@
         we must define the method inside newly created class(viz. Sub class) 
         otherwise it will also become abstract Class.
 
-        abstract class Human {
+        abstract class Human { //Abstract
 
             public abstract void eat();
 
@@ -860,4 +860,31 @@
         Human object = new Man();
         Man object1 = new Man();
 
-         
+44. Why do we need abstract Classes?
+    Lets say you have a class which contains two methods as an arguments Integer & Double and Print
+    down.
+    Case 1
+        class A{
+            public void show(Integer i){
+                System.out.println(i);
+            }
+
+            public void show(Double i){
+                System.out.println(i);
+            }
+        }    
+
+        Printer obj = new Printer();
+        obj.show(5);
+        obj.show(5.5);
+
+    Case 2
+    -   Integer & Double Classes extends Number abstract class
+        class Printer {
+            public void show(Number i) {
+                System.out.println(i);
+            }
+        }      
+        Printer obj = new Printer();
+        obj.show(5);
+        obj.show(5.5);
