@@ -888,3 +888,54 @@
         Printer obj = new Printer();
         obj.show(5);
         obj.show(5.5);
+
+45. Final Keyword
+    -   Final Keyword can be used with 3 Places.
+        1.  Variables --> Once you make a variable 'final' you can't change it & it becomes CONSTANT.
+
+            -   final int DAY = 19; --> Now you can't reassign value
+            -   final int DAY; --> Now you can assign the value to a variable
+                DAY = 19; //1st assignment
+                DAY = 10; //2nd assignment is not valid to a Constant variable.
+
+        2.  Methods --> Once you make a method 'final' in parent class you can't Override that
+                        method inside a child class.
+            Case 1:
+                class A {
+                    public final void show() {
+                        System.out.println("in A");
+                    }
+                }
+
+                class B extends A {
+                    Below👇👇 code is NOT valid bcoz the method is final
+                    public void show() {
+                        System.out.println("in B");
+                    }
+                }
+
+            Case 2: Method Overriding
+                class A {
+                    public void show() {
+                        System.out.println("in A");
+                    }
+                }
+
+                class B extends A {
+                    public void show() {
+                        System.out.println("in B");
+                    }
+                }
+
+        3.  Class --> Once you make a class as final then you can't inherit/extend that Class.
+            final 
+            final class A {
+                public final void show() {
+                    System.out.println("in A");
+                }
+            }
+
+            //INVALID in these context
+            //class B extends A {
+
+            //}
