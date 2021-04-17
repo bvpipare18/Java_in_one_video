@@ -86,11 +86,11 @@
 
 // Case 3.2
 
-interface Writer {
-    public abstract void write(); // declaration
+// interface Writer {
+//     public abstract void write(); // declaration
 
-    void show();
-}
+//     void show();
+// }
 
 /**
  * 1.Let's say in future if Pen wants to extend Writer as well as Another class
@@ -107,22 +107,44 @@ interface Writer {
  * 5.We can't define any method inside a inteerface.
  * 
  */
-class Pen extends Abc implements Writer {
-    public void write() {
-        System.out.println("Im a Pen");
-    }
+// class Pen extends Abc implements Writer {
+// public void write() {
+// System.out.println("Im a Pen");
+// }
+// }
+
+// class Pencil implements Writer {
+// public void write() {
+// System.out.println("Im a Pencil");
+// }
+// }
+
+// class Kit {
+// public void doSomething(Writer p) {
+// p.write();
+// }
+// }
+
+// Why do we need Interfaces?
+interface A {
+    void show();
 }
 
-class Pencil implements Writer {
-    public void write() {
-        System.out.println("Im a Pencil");
+class B implements A {
+    public void show() {
+        System.out.print("I am Show Method");
     }
-}
 
-class Kit {
-    public void doSomething(Writer p) {
-        p.write();
-    }
+    /**
+     * 1.You can have a method which is not in Interface class
+     * 
+     * 2.Below written method is not valid bcoz it is not declared in interface
+     * class.
+     * 
+     */
+    // public void kuchbhi() {
+    // System.out.print("Aise hi");
+    // }
 }
 
 public class InterfaceDemo {
@@ -168,17 +190,22 @@ public class InterfaceDemo {
         // obj.doSomething(pc);
 
         // Case 3.2
-        Kit obj = new Kit();
+        // Kit obj = new Kit();
 
-        Writer p = new Pen();
-        /** It Will call write() method of pen */
-        obj.doSomething(p);
+        // Writer p = new Pen();
+        // /** It Will call write() method of pen */
+        // obj.doSomething(p);
 
-        Writer pc = new Pencil();
-        /** It Will call write() method of pencil */
-        obj.doSomething(pc);
+        // Writer pc = new Pencil();
+        // /** It Will call write() method of pencil */
+        // obj.doSomething(pc);
 
         /** Object of interface cannot be created */
         // Writer obj = new Writer(); // NOT VALID
+
+        // Case 4
+        A obj = new B();
+        obj.show();
+        obj.kuchbhi();
     }
 }

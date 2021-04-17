@@ -1033,3 +1033,38 @@
         6.We can not create a object of Interface but we can create a Reference of it.
             -   Writer p = new Writer(); //Object --> NOT VALID
             -   Writer p = new Pen(); //Reference --> VALID
+
+46. More about Interfaces
+    -   Why do we use Interfaces?
+        -   To achieve concept of generalization but we achieve this through abstract classes.
+
+        -   Project Manager
+            -   Experienced Programmer
+            -   Fresher Programmer
+
+            Client comes and tells the Fresher Programmer to write some functions or add
+            features to his existing project and Fresher Programmer finds it difficult in 
+            dealing with functions and he seeks the help from Experienced Programmer and 
+            he provides some method declaration(Interfaces) to Fresher Programmer and Now after 
+            getting some idea/logc/reference from Experienced Programmer he then Defines those 
+            Methods.
+
+    -   In order to instantiate/ create object of a interface we must firstly implement
+        a interface class using another class and then 
+        CREATE 
+        -   REFERENCE OF A INTERFACE
+        -   OBJECT OF SUB CLASS
+
+        E.g. 
+        interface A{
+            void show();
+        }
+        class B implements A{
+            public void show(){
+                System.out.print("I am Sub Class");
+            }
+        }
+
+        A obj = new B();
+
+    -   Also we can do the same task using Anonymous Class
