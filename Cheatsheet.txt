@@ -1068,3 +1068,29 @@
         A obj = new B();
 
     -   Also we can do the same task using Anonymous Class
+
+47. Anonymous Inner Class
+    -   We use Anonymous class to instantiate Interfaces.
+
+    -   It is an inner class without a name and for which only a single object is created.
+    -   An anonymous inner class can be useful when making an instance of an object with 
+        certain “extras” such as overloading methods of a class or interface, without having 
+        to actually subclass a class.
+
+    E.g.
+        A obj = new A() { // Anonymous Inner Class
+            //The method used in Anonymous class can not be used in other classes
+            public void show() {
+                System.out.println("I am the best");
+            }
+        };
+        obj.show();
+
+    -   It will not waste lots of memory.
+
+    -   Whe we use normal class it creates a new class file.
+
+    -   If your intention is not to REUSE the method defined then go for Anonymous Class.
+    
+    -   You can create a object of interface class using Anonymous class you don't need
+        to create a New Class to instantiate the interface.
