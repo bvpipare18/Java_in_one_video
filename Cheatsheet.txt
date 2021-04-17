@@ -939,3 +939,97 @@
             //class B extends A {
 
             //}
+
+46. Interfaces
+    -   class --> extends
+    -   interface --> implements
+
+    -   Multiple Inheritance 
+        A class extending/inheriting two or more classes.
+        E.g. 
+        class B{
+
+        }
+        class C{
+
+        }
+        class A extends B,C{
+
+        }
+
+    -   Because Multiple inheritance is not possible in java that why the 'interface' concept is
+        introduced in java.
+        E.g. 
+        interface A{
+
+        }
+        class B implements A{
+            
+        }
+        class C extends B implements A{
+
+        }
+
+    -   Some properties related 'Interfaces'
+        1.Let's say in future if Pen wants to extend Writer as well as Another class
+            named 'Abc' since it is not possible Multiple inheritance on java.
+        
+        2.But Pen can extend one class as usual & also Pen can implements 'n'(1,2....n) 
+            number of classes with the help of Interfaces.
+
+            E.g.
+            interface Writer {
+                public abstract void write(); // declaration
+            }
+
+            class Pen extends Abc implements Writer {
+                public void write() {
+                    System.out.println("Im a Pen");
+                }
+            }
+            class Kit {
+                public void doSomething(Writer p) {
+                    p.write();
+                }
+            }
+
+            Kit obj = new Kit();
+
+            Writer p = new Pen();
+            obj.doSomething(p);
+
+            Writer pc = new Pencil();
+            obj.doSomething(pc);
+        
+        3.Pen class can implement 'n' number of classes.
+
+            class Pen extends Abc implements Writer Reader ... n Classes{
+
+            }
+        
+        4.When you create & declare any method inside a interface it is assumed to be
+            'public abstract'. You don't need to specify method as public abstract it is
+            already there.
+
+            interface Writer {
+                public abstract void write(); // declaration
+            }
+
+            EQUIVALENT TO
+
+            interface Writer {
+                void write(); // declaration
+            }
+        
+        5.We can't define any method inside a inteerface.
+            NOT VALID | NOT ALLOWED
+
+            interface Writer {
+                public abstract void write(){
+
+                } //Definition
+            }
+
+        6.We can not create a object of Interface but we can create a Reference of it.
+            -   Writer p = new Writer(); //Object --> NOT VALID
+            -   Writer p = new Pen(); //Reference --> VALID
