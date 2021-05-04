@@ -1132,4 +1132,6 @@
             }
         }
 
+50. Multiple Inheritance issue with Interface
+
     

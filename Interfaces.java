@@ -1,45 +1,39 @@
-// Method 1
-// interface Abc {
-// void show();
-// }
-
-// public class Interfaces {
-// public static void main(String[] args) {
-// Lambda Expression
-// Abc obj = () -> System.out.println("New style of Interfaces");
-// obj.show();
-// }
-// }
-
-//Method 2
+@FunctionalInterface
 interface Demo {
-    void abc(); // Method Declaration
+    void abc();
 
-    // Not Valid
-    // public void show() {
-
-    // }
-
-    // VALID
-    default void show() { // using default method
-        System.out.println("In Interfaces show method");
+    default void show() {
+        System.out.println("In Demo show()");
     }
 }
 
-/**
- * We can not create a object of a interface of that why we will create sub
- * class for it.
- */
+interface MyDemo {
+    default void show() {
+        System.out.println("In MyDemo show()");
+    }
+}
 
-class A implements Demo {
-    public void abc() { // Method Definition
-        System.out.println("In 'abc' method");
+class Random implements Demo, MyDemo {
+    public void abc() {
+        System.out.println("In abc");
+    }
+
+    /**
+     * 1. Below method is written to solve problem that arises due presence of same
+     * method in both the Interfaces.
+     * 
+     * 2. It will have confusion to method to call.
+     */
+    @Override
+    public void show() {
+        Demo.super.show();
     }
 }
 
 public class Interfaces {
+
     public static void main(String[] args) {
-        Demo obj = new A();
+        Demo obj = new Random();
         obj.abc();
         obj.show();
     }
