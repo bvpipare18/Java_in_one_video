@@ -1134,4 +1134,14 @@
 
 50. Multiple Inheritance issue with Interface
 
-    
+51. Static method in Interface
+    -   Interface can have static method and in order to call that static method we dont 
+        need to create a object of that.
+
+    -   interface Demo{
+            static void show(){
+                System.out.println("In interface show");
+            }
+        }
+        Demo.show();
+
