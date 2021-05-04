@@ -41,6 +41,9 @@
 
 /** Method 2 --> Calling static method of Interface */
 interface Demo {
+
+    int i = 9;
+
     void abc();
 
     static void show() {

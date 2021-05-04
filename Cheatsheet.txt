@@ -1145,3 +1145,5 @@
         }
         Demo.show();
 
+52. Whenever you create a variable inside interface by default it becomes CONSTANT or FINAL.
+    -   You can not reassign the value for that variable in another class.
