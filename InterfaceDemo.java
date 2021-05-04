@@ -206,6 +206,6 @@ public class InterfaceDemo {
         // Case 4
         A obj = new B();
         obj.show();
-        obj.kuchbhi();
+        // obj.kuchbhi();
     }
 }
