@@ -1117,4 +1117,19 @@
 
     -   👆👆Above Syntax will work only with interface having one Method.
 
+49. Default method in Interface
+    
+    -   Abstract Class --> We can Define & Declare method
+    
+    -   Interface
+        -   Till Java 1.7 Version --> We can Declare Method
+        -   From Java 1.8 Version --> We can Define Method using 'default' method
+
+        interface Demo{
+            void show();
+            default void show(){
+                System.out.println("In interface show method");
+            }
+        }
+
     
