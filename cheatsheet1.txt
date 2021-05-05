@@ -1,0 +1,13 @@
+53. Packages
+    -   There are thousands of inbuilt classes.
+    -   There are third party classes as well like JDBC,servlets.
+
+    -   All these classes are present in different categories of Package.
+        -   .io package --> BufferedInputSystem,File,PrintWriter
+        -   .net package --> Socket,URL,ServerSocket
+        -   .sql package --> ResultSet(Interface),DriverManager,TimeStamp
+
+    -   Package name should be mirror of Domain name
+        -   Domain Name --> google.com
+        -   Package Name --> com.google
+
