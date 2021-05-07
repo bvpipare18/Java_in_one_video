@@ -14,18 +14,18 @@
 
 6.  Java is Platform Indpendent.
 
-## 7. Primitive Data Types - Summary
+7.  Primitive Data Types - Summary
 
-    | DataType | Keyword | Size(bit) | Size(byte) | Min | Max |
-    | --- | --- | --- | --- | --- | --- |
-    | character | char        | 16 | 2  | 0        | 65535 |
-    | byte      | byte        | 8  | 1  | -128     | 127 |
-    | short     | short       | 16 | 2  | -32768   | 32767 |
-    | integer   | int         | 32 | 4  | -2e31    | -2e31-1 |
-    | float     | float       | 32 | 4  | 1.4e-45  | 3.4e+38 |
-    | long      | long        | 64 | 8  | -2e63    | -2e63-1 |
-    | double    | double      | 64 | 8  | 4.9e-324 | 1.8e+368 |
-    | boolean   | boolean     | NA | NA | false    | true |
+    | DataType  | Keyword | Size(bit) | Size(byte) | Min      | Max      |
+    | --------- | ------- | --------- | ---------- | -------- | -------- |
+    | character | char    | 16        | 2          | 0        | 65535    |
+    | byte      | byte    | 8         | 1          | -128     | 127      |
+    | short     | short   | 16        | 2          | -32768   | 32767    |
+    | integer   | int     | 32        | 4          | -2e31    | -2e31-1  |
+    | float     | float   | 32        | 4          | 1.4e-45  | 3.4e+38  |
+    | long      | long    | 64        | 8          | -2e63    | -2e63-1  |
+    | double    | double  | 64        | 8          | 4.9e-324 | 1.8e+368 |
+    | boolean   | boolean | NA        | NA         | false    | true     |
 
 8.  For E.g.
 
@@ -336,7 +336,7 @@
 
     - Object will take some space in HEAP Memory.
 
-    28.1 Information on Constructor
+      28.1 Information on Constructor
 
     - Constructor is Member method.
     - Constructor will have same name as class name.
