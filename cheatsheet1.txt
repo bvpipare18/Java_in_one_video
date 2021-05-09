@@ -11,3 +11,51 @@
         -   Domain Name --> google.com
         -   Package Name --> com.google
 
+    -   com --> Telusko --> Test --> 4 class files
+        -   In order to acces all 4 class files 
+            com.Telusko.Test.*;
+    
+    -   To java files having same class name can be present in two different Package.
+
+54. Access Modifiers
+    -   In java we dont have Access Specifiers like CPP instead we use Access Modifiers.
+    -   Abstract,Private,Protected,Public,Final
+
+    -   Only Abstract,Final,Public can be used with the classes.
+
+    -   Private,Protected can not be used with the classes.
+    -   Only in case of Inner class we can use Private.
+
+    -   Default class
+        class A{
+
+        }
+    -   These 👆👆 class can be accessed only inside a same Package.
+
+    -   Modifiers specified class
+        public class A{
+
+        }
+
+    -   To Access class outside a package we must specify that class as 'public'
+
+    -   We can also make Variable amd Methods as public,private,protected.
+    -   By default it is a default it means we can not access outside the package to do that 
+        we use 'public'.
+
+    -   Private: Specific class
+    -   Default: Specific Package
+    -   Public: Any class or Package
+    -   Protected: Subsiding class
+            same package;
+            public class A{
+                protected int i;
+            }
+
+            class B extends A{
+                System.out.println(i);
+                // i can be used here
+            }
+
+    -	Default is also called package private.   
+
