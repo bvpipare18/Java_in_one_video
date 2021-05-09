@@ -59,3 +59,26 @@
 
     -	Default is also called package private.   
 
+55. Exception Handling Try catch finally
+    -   Unchecked Exception
+        int i = 9/0; //It will give us the error while running the program.
+    
+    -   So in order to handle these Exceptions we use try-catch block.
+
+    -   We write a Critical Statement inside a try block.
+    -   We catch a object of Exception thrown by try block inside a catch block.
+
+    -   try{
+            int i = 9/0; //critical Statement
+        }
+        catch(Exception e){
+            System.out.println("Error occured");
+        }
+
+    -   Specifically above code will throw ArithmeticException.
+
+    -   ArithmeticException --> RuntimeException --> Exception
+
+    -   Even if you get the error or not in try catch block but you want to execute a statement always.
+
+    -   finally{ } block will always execute
