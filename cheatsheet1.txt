@@ -106,5 +106,20 @@
 
     -   All Exception extends Exception.
 
+57. Exception Handling
+    Checked Exception | Finally block
 
+    -   When compiler knows about Exception it is called Checked Exception.
+
+    -   When compiler dont prompt you about error it is called Unchecked Exception.
+
+    -   IOException is not a type of run time Exception.
     
+    -   Only run time exception subclasses are unchecked exception
+        remaining all are Checked Exception.
+
+    -   Here 'br' BufferedReader is a resource.
+
+    -   Any classes which comes from IO package is called resource.
+    
+    -   Whenever we use resources we must close it in 'finally' block.
