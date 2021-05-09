@@ -59,7 +59,7 @@
 
     -	Default is also called package private.   
 
-55. Exception Handling Try catch finally
+55. Exception Handling - try catch finally blocks
     -   Unchecked Exception
         int i = 9/0; //It will give us the error while running the program.
     
@@ -82,3 +82,29 @@
     -   Even if you get the error or not in try catch block but you want to execute a statement always.
 
     -   finally{ } block will always execute
+
+56. Exception Handling - Multiple Catch Blocks
+    -   catch (ArithmeticException e) {
+            System.err.println("Error");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.err.println("Error");
+        }
+
+        EQUIVALENT
+
+        catch(ArithmeticException | ArrayIndexOutOfBoundsException e ) {
+            System.err.println("Error");
+        }
+        👆👆These is valid from java 1.7 and Later
+
+    -   Suppose you dont know specific Exception then you can just 
+        These👇👇 catch block must write at the end
+        
+        catch(Exception e){
+            System.out.println("These is the parent Exception");
+        }
+
+    -   All Exception extends Exception.
+
+
+    
